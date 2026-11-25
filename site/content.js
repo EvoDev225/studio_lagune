@@ -119,7 +119,7 @@ window.SITE = {
       { src: 'images/g11-allee-fleurs.jpg', alt: 'Allée fleurie dans une salle de réception', cat: 'event' },
       { src: 'images/g08-autel-plage.jpg', alt: 'Autel fleuri sur une plage', cat: 'mariage' },
       { src: 'images/g18-appareil-mains.jpg', alt: 'Appareil photo tenu dans une lumière chaude', cat: 'detail' },
-      { src: 'images/g13-sortie-ceremonie.jpg', alt: 'Sortie de cérémonie dans un jardin', cat: 'mariage' },
+      { src: 'images/g16-table-pastel.jpg', alt: 'Table de mariage aux tons pastel', cat: 'mariage' },
       { src: 'images/g10-bougies.jpg', alt: 'Bougies allumées dans le noir', cat: 'event' },
       { src: 'images/g14-robe.jpg', alt: 'Robe de mariée suspendue', cat: 'detail' }
     ]

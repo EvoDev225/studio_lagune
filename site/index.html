@@ -70,7 +70,7 @@ html.motion .hero__stage { position: sticky; top: 0; }
 .hero__panel { position: absolute; z-index: 1; top: 10px; right: 10px; bottom: 10px; left: 51%; border-radius: 14px; background: var(--white); }
 
 .hero__silhouette { position: absolute; z-index: 3; bottom: 0; left: 37%; height: 86%; width: auto; max-width: none; pointer-events: none;
-  filter: drop-shadow(0 0 18px rgba(255, 150, 50, .28)); transform-origin: 50% 100%; }
+  filter: blur(0px); transform-origin: 50% 100%; }
 
 /* contenu gauche */
 .hero__left { position: absolute; z-index: 4; top: 0; bottom: 0; left: 0; width: 51%; display: flex; flex-direction: column; padding: 30px 0 58px 52px; }
@@ -220,7 +220,7 @@ body.past-hero .hero__nav { opacity: 0; pointer-events: none; }
 .sv__item:hover .sv__name { color: #fff; }
 .sv__half { display: block; }
 .sv__half--b { position: absolute; inset: 0; }
-html.motion .sv__half--a { clip-path: inset(-40% -5% 50% -5%); }
+html.motion .sv__half--a { clip-path: inset(-40% -5% 48% -5%); }
 html.motion .sv__half--b { clip-path: inset(50% -5% -20% -5%); }
 html:not(.motion) .sv__half--b { display: none; }
 .sv__detail { color: var(--grey); text-align: right; flex-shrink: 0; }
@@ -393,7 +393,7 @@ html:not(.motion) .lx__img img { transform: none; }
   .fq__list { grid-column: 1; }
   .ct__panel { grid-template-columns: 1fr; padding: 40px 22px; gap: 24px; }
   .btn-wa--big { width: 100%; }
-  .ct__title { font-size: 11.5vw; }
+  .ct__title { font-size: 11.5vw; line-height: 1.14; }
   .ft__legal { margin-bottom: 30px; }
 }
 @media (max-width: 760px) {
@@ -767,7 +767,7 @@ html:not(.motion) .lx__img img { transform: none; }
     // lettres du mot géant
     .from('.hero__ltr', { yPercent: 115, rotate: 6, duration: 1.1, stagger: 0.055 }, 0.7)
     // la silhouette fait sa mise au point
-    .from('.hero__silhouette', { filter: 'blur(22px) drop-shadow(0 0 18px rgba(255,150,50,0))', opacity: 0, scale: 1.08, duration: 1.4, ease: 'power3.out' }, 1.0)
+    .from('.hero__silhouette', { filter: 'blur(22px)', opacity: 0, scale: 1.08, duration: 1.4, ease: 'power3.out' }, 1.0)
     // textes et navigation en cascade
     .from(['.logo', '.hero__sub span', '.btn-pill', '.hero__proof', '.hero__nav li', '.menu-btn', '.hero__avail'], { y: 22, opacity: 0, duration: 0.9, stagger: 0.06 }, 1.6)
     // la carte d'avis rebondit en place
