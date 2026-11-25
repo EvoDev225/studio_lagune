@@ -13,3 +13,6 @@ npm-debug.log*
 
 # Vidéos brutes (lourdes)
 videos/*.mp4
+
+# Visuels TikTok (gardés en local)
+captures/tiktok/
