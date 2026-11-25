@@ -797,7 +797,8 @@ html:not(.motion) .lx__img img { transform: none; }
     .fromTo('.hero__reveal-img', { scale: 1.25 }, { scale: 1, duration: 0.6, ease: 'power2.out' }, 0.12)
     // la carte s'efface et s'écarte
     .to('.hero__silhouette', { scale: 1.18, opacity: 0, duration: 0.4, ease: 'power2.in' }, 0.08)
-    .to('.hero__right', { xPercent: () => (mobile() ? 0 : 25), yPercent: () => (mobile() ? 30 : 0), opacity: 0, duration: 0.35, ease: 'power2.in' }, 0.06)
+    // contenu du panneau blanc (pas son conteneur : le bouton menu y est fixe sur mobile)
+    .to(['.hero__avail', '.quote-card', '.hero__nav'], { x: () => (mobile() ? 0 : innerWidth * 0.12), y: () => (mobile() ? innerHeight * 0.1 : 0), opacity: 0, duration: 0.35, ease: 'power2.in' }, 0.06)
     .to('.hero__panel', { xPercent: () => (mobile() ? 0 : 25), yPercent: () => (mobile() ? 30 : 0), opacity: 0, duration: 0.35, ease: 'power2.in' }, 0.06)
     .to(['.logo', '.hero__sub', '.btn-pill', '.hero__proof'], { y: -40, opacity: 0, duration: 0.25, stagger: 0.02, ease: 'power2.in' }, 0.04)
     .to(card, { scale: 0.96, duration: 0.6, ease: 'power1.in' }, 0.1)
